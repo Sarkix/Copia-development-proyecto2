@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.other-element-container {
+    z-index: 19;
+    display: inline;
+    position: fixed;
+    right: 18px;
+    bottom: calc(110px + env(safe-area-inset-bottom));
+}
+
+.other-element-button {
+    position: relative;
+    align-items: center;
+    border: 0px;
+    border-radius: 16px;
+    box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    opacity: 1;
+    outline: 0px;
+    transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+    padding: 0px 24px;
+    background-color: #1fc7d4;
+    color: #fff;
+    width: 48px;
+    height: 48px;
+}
+
+/* Cambio de color al pasar el cursor */
+.other-element-button:hover {
+    background-color: #6ce5ee;; /* Cambia el color al pasar el cursor */
+}
+
+/* Animación de reducción de tamaño al hacer clic */
+.other-element-button:active {
+    transform: scale(0.95); /* Reducción de tamaño al hacer clic */
+    transition: transform 0.5s; /* Duración de la animación de reducción de tamaño */
+}
+
+.other-element-button.light-theme svg {
+    align-self: center;
+    fill: #fff;
+    color: #fff;
+    flex-shrink: 0;
+    margin-left: 0.5rem;
+}
+
+.other-element-button.dark-theme svg {
+    align-self: center;
+    fill: rgb(0, 0, 0)000;
+    color: #000000;
+    flex-shrink: 0;
+    margin-left: 0.5rem;
+}

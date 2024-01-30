@@ -1,0 +1,29 @@
+:root {
+    --mustardyellow: #ffb237;
+    --greyBorder: #383241;
+    --backgroundDarkGrey: #27262c;
+    --purpleTweet: #b8add2;
+    --communityInactiveButton: rgba(122, 110, 170, 0.7);
+    --communityActiveButton: #7745d8;
+    --bg-light-blue: #72b8f2;
+    --bg-lightest-blue: #99b8c8;
+}
+
+#root {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+}

@@ -1,0 +1,105 @@
+
+:root {
+    /* Light */
+    --light-text1h2: #b8acd2;
+    --light-text2h2: #7a6cab;
+    --light-text3h1: #290e5e;
+    --standar-size: 1rem;
+    --bg-light: #fbf9fb;
+    /* Dark */
+    --bg-dark: #08070a;
+    --dark-text3h1: #ffffff;
+
+    }
+    
+body .buy-cake{
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 0 !important;
+    padding-bottom: 3rem !important;
+    gap: 0 !important;
+    padding-top: 3rem;
+}
+
+.buy-cake.light-theme{
+    background-color: #faf9fa !important; 
+}
+
+.buy-cake.dark-theme h1{
+    color: var(--dark-text3h1) !important;
+}
+
+.buy-cake.dark-theme{
+    background-color: #08060b !important;
+}
+
+.buy-cake.dark-theme h1{
+    color: var(--dark-text3h1) !important;
+}
+
+.buy-cake h1{
+    text-align: center !important;
+}
+
+.language, .settings i{
+    padding-top: 0.5rem;
+}
+    
+body .buy-cake h1 {
+    font-size: 2.5rem !important;
+    margin: 0 !important;
+    margin-top: 2rem !important;
+    font-weight: bold;
+}
+
+
+body .buy-cake .buy-subtitle {
+    max-width: 65% !important;
+    text-align: center !important;
+}
+
+body .buy-cake .buy-subtitle h2 {
+    font-size: 1.3rem !important;
+    color: var(--light-text2h2) !important;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+body .buy-cake .color-change{
+    color: #7745d8 !important;
+}
+
+
+.btn-sec {
+    border: 0;
+    font-weight: bold;
+    font-size: 1rem;
+    background: none;
+}
+
+.btn-sec a{
+    color: #1FC7D4 !important;
+    text-decoration: none;
+}
+
+.btn-sec-mb a{
+    color: #1FC7D4 !important;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.general-button.dark-theme a{
+    color:white !important;
+}
+
+.general-button.light-theme a{
+    color:#27262c !important;
+}

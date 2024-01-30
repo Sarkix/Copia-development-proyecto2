@@ -1,0 +1,659 @@
+:root {
+    /* Light */
+    --light-text1h2: #b8acd2;
+    --light-text2h2: #7a6cab;
+    --light-text3h1: #290e5e;
+    --btn-light-text: #ffffff;
+    --bg-light: #ffffff;
+    --bg-btn-light: #eff4f5;
+
+    /* Dark */
+    --bg-dark: #27272d;
+    --bg-select-dark: #343447;
+    --dark-text3h1: #ffffff;
+    --btn-dark-text: #08070a;
+
+    /* All */
+    --btn-bg: #1fc7d4;
+    --standar-size: 0.8rem;
+}
+
+.main-navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 4rem;
+    justify-content: space-between;
+    max-width: 100%;
+    position: relative;
+    /* z-index: 1; */
+}
+
+.main-navbar.light-theme {
+    background-color: var(--btn-light-text);
+}
+
+
+.main-navbar.light-theme {
+    background-color: white;
+}
+
+
+.main-navbar.dark-theme {
+    background-color: var(--bg-dark);
+}
+
+.main-navbar.dark-theme svg.light {
+    display: none;
+}
+
+.main-navbar.light-theme svg.dark {
+    display: none;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.1rem;
+    padding-left: var(--standar-size);
+    box-sizing: content-box;
+}
+
+.logoMenuList{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+.logo h1 {
+    font-size: 1.3rem;
+}
+
+.logo.light {
+    min-width: 150px;
+}
+.logo.dark {
+    min-width: 150px;
+}
+.menu-list {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+}
+
+.menu-list .dark-theme h2 {
+    font-size: var(--standar-size);
+    color: var(--light-text1h2);
+    font-weight: normal;
+    margin: 0;
+}
+
+.menu-list .light-theme h2 {
+    font-size: var(--standar-size);
+    color: var(--light-text2h2);
+    font-weight: normal;
+    margin: 0;
+}
+
+.menu-icon-list {
+    display: flex;
+    flex-direction: row;
+    color: var(--lighth2);
+    align-items: center;
+    gap: var(--standar-size);
+}
+
+.menu-icon-list {
+    margin-top: 0rem;
+}
+
+.exchange-number {
+    margin-top: 0.5rem;
+}
+
+.exchange {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.1rem;
+    padding-left: var(--standar-size);
+}
+
+.exchange:hover img {
+    transform: scale(1.15);
+}
+
+.exchange img {
+    height: 2rem;
+}
+
+.exchange h2 {
+    font-size: var(--standar-size);
+}
+
+.icon-list {
+    font-size: 1.3rem;
+}
+
+.icon-list:hover {
+    color: var(--darkh2);
+}
+
+.wallet {
+    padding-right: var(--standar-size);
+}
+
+.more {
+    white-space: nowrap;
+}
+
+/* Chain dropdown */
+
+#chain-btn.btn-danger,
+#chain-btn.btn-check:checked + .btn,
+#chain-btn.btn.active,
+#chain-btn.btn.show,
+#chain-btn.btn:first-child:active,
+:not(.btn-check) + .btn:active {
+    border-radius: 5rem 5rem 5rem 5rem !important;
+    border: none !important;
+
+    font-weight: bold !important;
+    font-size: var(--standar-size) !important;
+    width: auto !important;
+    padding: 0 0.5rem 0 0 !important;
+}
+
+#chain-btn.btn-danger,
+#chain-btn.btn {
+    background-color: var(--bg-btn-light) !important;
+    color: var(--light-text2h2) !important;
+}
+
+#chain-btn.btn-danger:hover {
+    opacity: 70% !important;
+}
+
+#chain-btn.dark-theme.btn-danger,
+#chain-btn.btn-check:checked + #chain-btn.btn,
+#chain-btn.btn:first-child:active,
+#chain-btn:not(.btn-check) + #chain-btn.btn:active {
+    background-color: var(--bg-select-dark) !important;
+    color: var(--btn-light-text) !important;
+}
+
+#chain-btn.dark-theme.btn.show {
+    background-color: var(--bg-select-dark) !important;
+    color: var(--btn-light-text) !important;
+}
+
+#chain-btn.light-theme.btn.show {
+    background-color: var(--bg-btn-light) !important;
+    color: var(--light-text3h1) !important;
+}
+
+#chain-img-btn.dropdown-img-btn {
+    height: 2rem;
+}
+
+.dropdown-img {
+    height: 1.5rem;
+}
+
+.chain-item.light-theme.btn-danger,
+.chain-item.btn-check:checked + .btn,
+.btn:first-child:active,
+:not(.btn-check) + .btn:active {
+    background-color: var(--bg-btn-light) !important;
+    color: var(--livscode-file://vscode-app/private/var/folders/8f/dpd4kpc93s9f021x7fmhz7h00000gn/T/AppTranslocation/C478F4DC-7EA1-4A5D-8EC4-94C18FB0388F/d/Visual%20Studio%20Code.app/Contents/Resources/app/out/vs/code/electron-sandbox/workbench/workbench.htmlght-text3h1) !important;
+}
+
+.chain-item.dark-theme.dropdown-item:hover {
+    background-color: #353446 !important;
+    color: white;
+}
+
+.chain-item.dark-theme.dropdown-item {
+    background-color: var(--bg-dark) !important;
+    color: var(--bg-light);
+    padding-top: 1rem;
+}
+
+.chain-item.light-theme.dropdown-item {
+    background-color: var(--bg-light) !important;
+}
+
+.chain-item.light-theme.dropdown-item:hover {
+    background-color: #ecf5fe !important;
+}
+
+.chain-item.dark-theme.dropdown-header,
+.chain-item.dark-theme.dropdown-menu {
+    background-color: var(--bg-dark) !important;
+    color: var(--bg-light);
+}
+
+.chain-item.dark-theme.dropdown-divider {
+    border-top: 2px solid #383241;
+}
+
+.chain-menu.dropdown-menu {
+    border-radius: 1rem !important;
+}
+
+.chain-menu.dark-theme.dropdown-menu {
+    background-color: var(--bg-dark) !important;
+}
+
+.menu-icon-list p {
+    margin: unset;
+}
+
+/* Responsive Design */
+
+@media (max-width: 1050px) {
+    .exchange {
+        display: none;
+    }
+    .hidden-logo {
+        display: block;
+        min-width: 2rem;
+    }
+
+    .logo.light {
+        display: none;
+    }
+    .logo.dark {
+        display: none;
+    }
+    .text-hidden {
+        display: none;
+    }
+}
+
+@media (max-width: 850px) {
+    .menu-list {
+        display: none;
+    }
+   
+    .main-navbar {
+        max-width: 150vw;
+    }
+}
+
+@media (min-width: 1050px) {
+    .hidden-logo {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    /* .exchange h2 {
+        font-size: 0.6rem;
+    }
+
+    .main-navbar .dark-theme h2 {
+        font-size: 0.6rem;
+    }
+
+    .main-navbar .light-theme h2 {
+        font-size: 0.6rem;
+    } */
+
+    .language,
+    .settings i {
+        padding-top: 0.5rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .wallet {
+        max-width: 100%;
+    }
+
+    .chain {
+        max-width: 100%;
+    }
+}
+
+/* Trade Dropdown */
+
+.trade a{
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.trade-dropdown.btn-secondary {
+    border: none !important;
+    background: none !important;
+}
+
+.trade-dropdown.btn-secondary:hover {
+    opacity: 70%;
+    content: "" !important;
+}
+
+#trade-drop.btn-check:checked + #trade-drop.btn,
+#trade-drop.btn.active,
+#trade-drop.btn.show,
+#trade-drop.btn:first-child:active,
+:not(.btn-check) + #trade-drop.btn:active {
+    color: var(--light-text1h2) !important;
+    content: "" !important;
+}
+
+#trade-drop.btn-secondary.dark-theme {
+    color: var(--light-text1h2) !important;
+}
+
+#trade-drop.btn-secondary.light-theme {
+    color: var(--light-text2h2) !important;
+}
+
+.trade-item {
+    margin-top: 1rem;
+}
+
+.extra-svg {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 10rem;
+}
+
+.extra-svg h2 {
+    width: 2rem;
+}
+
+.trade-drop-icon {
+    align-self: flex-end;
+}
+
+#trade-menu.dropdown-menu.dark-theme {
+    background-color: var(--bg-dark);
+}
+
+/* Earn Dropdown */
+
+.earn-nav a{
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.earn-dropdown.btn-secondary {
+    border: none !important;
+    background: none !important;
+}
+
+.earn-dropdown.btn-secondary:hover {
+    opacity: 70%;
+    content: "" !important;
+}
+
+#earn-drop.btn-check:checked + #earn-drop.btn,
+#earn-drop.btn.active,
+#earn-drop.btn.show,
+#earn-drop.btn:first-child:active,
+:not(.btn-check) + #earn-drop.btn:active {
+    color: var(--light-text1h2) !important;
+    content: "" !important;
+}
+
+#earn-drop.btn-secondary.dark-theme {
+    color: var(--light-text1h2) !important;
+}
+
+#earn-drop.btn-secondary.light-theme {
+    color: var(--light-text2h2) !important;
+}
+
+.earn-item {
+    margin-top: 1rem;
+}
+
+.extra-svg {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 10rem;
+}
+
+.extra-svg h2 {
+    width: 2rem;
+}
+
+.earn-drop-icon {
+    align-self: flex-end;
+}
+
+#earn-menu.dropdown-menu.dark-theme {
+    background-color: var(--bg-dark);
+}
+
+/* NFT Dropdown */
+
+.nft a{
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.nft-dropdown.btn-secondary {
+    border: none !important;
+    background: none !important;
+}
+
+.nft-dropdown.btn-secondary:hover {
+    opacity: 70%;
+    content: "" !important;
+}
+
+#nft-drop.btn-check:checked + #nft-drop.btn,
+#nft-drop.btn.active,
+#nft-drop.btn.show,
+#nft-drop.btn:first-child:active,
+:not(.btn-check) + #nft-drop.btn:active {
+    color: var(--light-text1h2) !important;
+    content: "" !important;
+}
+
+#nft-drop.btn-secondary.dark-theme {
+    color: var(--light-text1h2) !important;
+}
+
+#nft-drop.btn-secondary.light-theme {
+    color: var(--light-text2h2) !important;
+}
+
+.nft-item {
+    margin-top: 1rem;
+}
+
+.extra-svg {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 10rem;
+}
+
+.extra-svg h2 {
+    width: 2rem;
+}
+
+.nft-drop-icon {
+    align-self: flex-end;
+}
+
+#nft-menu.dropdown-menu.dark-theme {
+    background-color: var(--bg-dark);
+}
+
+/* Game Dropdown */
+
+.game a{
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.game-dropdown.btn-secondary {
+    border: none !important;
+    background: none !important;
+}
+
+.game-dropdown.btn-secondary:hover {
+    opacity: 70%;
+    content: "" !important;
+}
+
+#game-drop.btn-check:checked + #game-drop.btn,
+#game-drop.btn.active,
+#game-drop.btn.show,
+#game-drop.btn:first-child:active,
+:not(.btn-check) + #game-drop.btn:active {
+    color: var(--light-text1h2) !important;
+    content: "" !important;
+}
+
+#game-drop.btn-secondary.dark-theme {
+    color: var(--light-text1h2) !important;
+}
+
+#game-drop.btn-secondary.light-theme {
+    color: var(--light-text2h2) !important;
+}
+
+.game-item {
+    margin-top: 1rem;
+}
+
+.extra-svg {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 10rem;
+}
+
+.game-item h2 {
+    min-width: 5rem;
+}
+
+.game-drop-icon {
+    align-self: flex-end;
+}
+
+#game-menu.dropdown-menu.dark-theme {
+    background-color: var(--bg-dark);
+}
+
+/* More Dropdown */
+
+.more-dropdown.btn-secondary {
+    border: none !important;
+    background: none !important;
+}
+
+.more-dropdown.btn-secondary:hover {
+    opacity: 70%;
+    content: "" !important;
+}
+
+#more-drop.btn-check:checked + #more-drop.btn,
+#more-drop.btn.active,
+#more-drop.btn.show,
+#more-drop.btn:first-child:active,
+:not(.btn-check) + #more-drop.btn:active {
+    color: var(--light-text1h2) !important;
+    content: "" !important;
+}
+
+#more-drop.btn-secondary.dark-theme {
+    color: var(--light-text1h2) !important;
+}
+
+#more-drop.btn-secondary.light-theme {
+    color: var(--light-text2h2) !important;
+}
+
+.more-item {
+    margin-top: 1rem;
+}
+
+.extra-svg {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 10rem;
+}
+
+.more-item h2 {
+    min-width: 5rem;
+}
+
+.more-drop-icon {
+    align-self: flex-end;
+}
+
+#more-menu.dropdown-menu.dark-theme {
+    background-color: var(--bg-dark);
+}
+
+.more-item.dropdown-divider {
+    border-top: 0.1px solid var(--light-text2h2);
+}
+
+/* Setting BTN */
+
+.settings-btn {
+    border: none;
+    appearance: none;
+    background: none;
+    color: var(--light-text1h1);
+    margin: 0;
+    vertical-align: baseline;
+    padding-top: 0;
+    padding-bottom: 0.3rem;
+}
+
+.settings-btn i,h2{
+    padding: 0;
+    margin: 0;
+}
+
+.icon-language:hover{
+    opacity: 70%;
+}
+
+.language-options2.light-theme {
+    border-radius: 5px;
+    position: absolute;
+    right: 23rem;
+    top: 4rem;
+    background-color:white;
+    color: #280d5f;
+    overflow-y: scroll;
+    z-index: 5;
+    height: 300px;
+}
+
+.option-lang:hover{
+    color: #b8acd2;
+    opacity: 70%;
+}
+
+.language-options2.dark-theme {
+    border-radius: 5px;
+    position: absolute;
+    right: 23rem;
+    /* bottom: 60px; */
+    top: 4rem;
+    background-color: var(--footer-dark-bg);
+    overflow-y: scroll;
+    z-index: 5;
+    height: 300px;
+}
+
+.dollar-link p{
+    color: #7a6cab;
+    font-size: 0.8rem;
+}
+
+.dollar-link img{
+    width: 35px;
+    height: 35px;
+}

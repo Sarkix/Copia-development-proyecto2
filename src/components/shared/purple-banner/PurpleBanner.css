@@ -1,0 +1,68 @@
+.purpleBanner{
+    height: 80px;
+    width: 100vw;
+    background: linear-gradient(0deg, rgba(39, 38, 44, 0.4), rgba(39, 38, 44, 0.4)), linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%);
+    /* position: sticky; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.purpleFirst{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#purple-banner-img{
+    height: 130px;
+}
+
+.purpleBanner p{
+    background: rgba(39, 38, 44, 0.4);
+    color: rgb(189, 194, 196);
+    border-radius: 16px;
+    padding: 10px 15px;
+    width: 60%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    font-weight: bold;
+}
+
+.purpleBanner p span:first-child{
+    color: #ffb237;
+    padding-right: 5px;
+}
+
+.purpleBanner p span:last-child{
+    color: rgb(255, 255, 255);
+    padding-right: 5px;
+
+}
+
+.purpleBanner svg{
+    margin: 0 20px;
+}
+
+@media (max-width: 850px){
+    #purple-banner-img{
+        display: none;
+    }
+
+    .purpleBanner{
+    overflow: hidden;
+    height: 100%;
+    padding: 12px;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(39, 38, 44, 0.4), rgba(39, 38, 44, 0.4)), linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%);
+    }
+
+    .purpleBanner p{
+        width: auto;
+    }
+}

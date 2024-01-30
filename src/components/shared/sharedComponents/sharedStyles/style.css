@@ -1,0 +1,133 @@
+:root {
+   /* Light */
+   --light-text1h2: #b8acd2;
+   --light-text2h2: #7a6cab;
+   --light-text3h1: #290e5e;
+   --btn-light-text: #ffffff;
+   --bg-light: #fbf9fb;
+
+   /* Dark */
+   --bg-dark: #08070a;
+   --dark-text3h1: #ffffff;
+   --btn-dark-text: #08070a;
+
+   /* All */
+    --btn-bg: #1FC7D4;
+    --standar-size: 1rem;
+  
+
+    
+    }
+
+
+body {
+    font-family: 'Kanit', sans-serif !important;
+    margin: 0 !important;
+}
+
+
+
+.btn-main-blue {
+    background-color: var(--btn-bg);
+    border: none;
+    box-shadow: 0.5px 1px black;
+    border-radius: 15px 15px 15px 15px;
+    padding: 7px 16px;
+    text-decoration: none;
+    align-content: center;
+    font-weight: bold;
+    font-size: 1rem;
+    min-width: max-content;
+}
+
+.btn-main-white {
+    background-color: white;
+    color: #1FC7D4;
+    border: none;
+    box-shadow: 0.5px 1px black;
+    border-radius: 15px 15px 15px 15px;
+    padding: 7px 16px;
+    text-decoration: none;
+    align-content: center;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.btn-main-blue:hover {
+    opacity: 70%;
+}
+
+.btn-main-blue.dark-theme a{
+        text-decoration: none;
+        color: var(--btn-dark-text);
+    
+}
+
+.btn-main-blue.light-theme a{
+    text-decoration: none;
+    color: var(--btn-light-text);
+
+}
+
+
+.btn-expanded{
+    padding: 16px 23px;
+    margin-right: 1rem;
+}
+
+.btn-sec {
+    border: 0;
+    font-weight: bold;
+    font-size: 1rem;
+    background: none;
+}
+
+.btn-sec a{
+    color: #1FC7D4 !important;
+}
+
+.btn-sec-mb a{
+    color: #1FC7D4 !important;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.btn-main-blue.dark-theme {
+    color: var(--btn-dark-text);
+}
+
+.btn-main-blue.light-theme {
+    color: var(--btn-light-text);
+}
+
+.general-button.dark-theme{
+    color:white !important;
+}
+
+.general-button.light-theme{
+    color:#27262c !important;
+}
+
+.general-button{
+    background-color: #1FC7D4;
+    border-radius: 20px;
+    padding: 10px 15px;
+    box-shadow: 2px 2px #1B99AA;
+    align-content: center;
+    font-size: 1rem;
+}
+
+.general-button a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.general-button p{
+    margin: 0;
+    font-weight: 600;
+}
